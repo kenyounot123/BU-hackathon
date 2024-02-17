@@ -1,0 +1,4 @@
+# (Multiple Choice) What group categories are you interested in exploring?
+    # Cultural, Religion, Technology, Science, Mathematics, Nature, Sports, Political, Government, Health, Art
+
+    
