@@ -8,6 +8,8 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    background-color: #005A43;
+    font-family: "Work Sans", sans-serif;
 }
 
 .homepage-container {
@@ -15,7 +17,10 @@ body {
     margin: 0 auto;
 }
 
-.title {}
+.title {
+    font-size: 3rem;
+    color: white;
+}
 
 .homepage {
     height: 100%;
@@ -30,7 +35,13 @@ body {
 }
 
 #start-btn {
-    width: 200px;
+    font-family: "Work Sans", sans-serif;
+    margin-top: 1em;
+    width: 20%;
     padding: 1em 2em;
     text-align: center;
+    font-size: 1.5rem;
+    background-color: #EBF199;
+    border: none;
+    border-radius: 50px;
 }
