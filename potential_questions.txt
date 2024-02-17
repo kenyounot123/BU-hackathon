@@ -49,7 +49,29 @@
         # Summit on Student Political Engagement
 
 # Health
-    # 
+    # Disease
+        # Alzheimer's Foundation of America On Campus
+        # American Cancer Society on Campus
+    # Sexuality
+        # Planned Parenthood Generation Binghamton
+        # SHADES
+    # Medicine/Medical
+        # Medical Roots Project
+        # Medical Research Interest Club
+        # Medicine In Sports
+        # One Health Medical Association
+    # Pre-Professional
+        # American Medical Women's Association
+        # Association for Applied Behavioral Sciences
+        # Health and Wellness Studies Association
+        # MEDLIFE
+        # Pre Pharmacy Association
+        # Nursing Student Association
+        # Student Psychological Association
+    # Philanthropy/Community Service
+        # Habitat for Humanity
+        # Wishmakers on Campus
+
 # Mathematics
 # Nature
 # Political
