@@ -1,4 +1,60 @@
 # (Multiple Choice) What group categories are you interested in exploring?
-    # Cultural, Religion, Technology, Science, Mathematics, Nature, Sports, Political, Government, Health, Art
+    # Art, Cultural, Government, Health, Mathematics, Nature, Political, Religion, Science, Sports, Technology
 
-    
+# Art
+    # Are you interested in:
+        # Fine Art
+        # Dance
+        # Music
+        # Digital: Film/Photo/Graphic Design
+        # Theater
+        # Art History
+
+# Cultural
+    # Are you interested in:
+        # Asian
+            # Bangali
+            # Fujianese
+            # Chinese
+            # Hong Kong
+            # Indian
+            # Korean
+            # Pakistani
+            # Philippine-American
+            # Sikh & Punjabi
+            # Taiwanese American
+            # Vietnamese 
+        # Latin American 
+            # Latin
+        # North American
+            # Caribbean
+            # Dominican
+            # Haitian
+            # Philippine-American
+            # Taiwanese American
+        # European
+            # Turkish
+            # Albanian
+            # Hellenic
+        # African
+            #  African
+
+# Government
+    # Health
+        # American Red Cross Club
+    # Town Council
+        # Dickinson Town Council
+    # New York State
+        # New York Public Interest Research Group
+        # Summit on Student Political Engagement
+
+# Health
+    # 
+# Mathematics
+# Nature
+# Political
+# Religion
+# Science
+# Sports
+# Technology
+
