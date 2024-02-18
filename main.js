@@ -1,9 +1,9 @@
 
-fetch('../extraction/questions.json')
+fetch('./extraction/questions.json')
     .then(response => response.json())
     .then(data => questions = data);
 
-fetch('../extraction/club_code.json')
+fetch('./extraction/club_code.json')
     .then(response => response.json())
     .then(data => club_id = data);
 let selectedKey = 'categories';
