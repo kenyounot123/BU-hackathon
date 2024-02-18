@@ -20,6 +20,7 @@ body {
 .title {
     font-size: 3rem;
     color: white;
+    text-align: center;
 }
 
 .homepage {
@@ -37,11 +38,19 @@ body {
 #start-btn {
     font-family: "Work Sans", sans-serif;
     margin-top: 1em;
-    width: 20%;
+    width: 300px;
     padding: 1em 2em;
     text-align: center;
     font-size: 1.5rem;
     background-color: #EBF199;
     border: none;
     border-radius: 50px;
+}
+
+#start-btn:hover {
+    opacity: 0.75
+}
+
+#start-btn:active {
+    transform: translateY(-10px);
 }
