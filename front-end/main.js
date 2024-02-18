@@ -310,12 +310,12 @@ function writeFormToDom(nextKey) {
     const answers = document.createElement('div');
     answers.classList.add('form-answers');
 
-    //Exit out of recursive function
+    //Display chosen club and exit out of recursive function
     let keys;
     try {
         keys = Object.keys(questions[nextKey]);
     } catch (error) {
-        console.log("My error:", error)
+        displayChosenClub(selectedKey)
         return;
     }
 
@@ -361,7 +361,7 @@ function writeFormToDom(nextKey) {
         const allRadioButtons = document.querySelectorAll('input')
         allRadioButtons.forEach(button => {
             if (button.checked) {
-                formContainer.innerHTML = "";
+                container.innerHTML = "";
                 writeFormToDom(selectedKey)
             } else {
                 return;
@@ -375,5 +375,13 @@ function writeFormToDom(nextKey) {
 
     container.appendChild(formContainer);
     formContainer.appendChild(submitBtn);
+}
+
+function displayChosenClub(selectedClub) {
+    const chosenClub = document.createElement('h1')
+    chosenClub.classList.add('chosen-club')
+    chosenClub.textContent = selectedClub
+
+    container.append(chosenClub)
 }
 
