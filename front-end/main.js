@@ -165,12 +165,10 @@ let questions = {
             ]
         },
         "Mathematics": {
-            "Mathematics": [
-                "Actuarial Association",
-                "Association For Women in Mathematics",
-                "Math Club",
-                "Teachers in Mathematics Association"
-            ]
+                "Actuarial Association": ["Actuarial Association"],
+		"Association For Women in Mathematics": ["Association For Women in Mathematics"],
+        	"Math Club": ["Math Club"],
+        	"Teachers in Mathematics Association": ["Teachers in Mathematics Association"]
         },
         "Nature": {
             "Athletics": [
