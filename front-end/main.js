@@ -134,7 +134,7 @@ let questions = {
                 "Pre Pharmacy Association",
                 "Nursing Student Association",
                 "Student Psychological Association",
-                "Pre- Genetic Counseling",
+                "Pre-Genetic Counseling",
                 "Pre-Dental Association",
                 "Pre-Medical Association",
                 "Pre-Occupational & Physical Therapy Association",
