@@ -104,7 +104,6 @@ function displayChosenClub(selectedClub) {
 
     //Get selected link from json file
     const selectedLink = club_id[selectedClub]
-    console.log(selectedLink);
     //Create title for chosen club
     const chosenClub = document.createElement('h1')
     chosenClub.classList.add('chosen-club')
