@@ -284,11 +284,13 @@ let questions = {
         }
     }
 };
+
 let selectedKey = 'categories';
 const startBtn = document.getElementById("start-btn");
 const container = document.querySelector(".homepage-container");
-startBtn.addEventListener("click", function () {
 
+
+startBtn.addEventListener("click", function () {
     container.innerHTML = "";
     writeFormToDom(selectedKey);
 });
@@ -323,6 +325,7 @@ function writeFormToDom(nextKey) {
         keys = Object.values(questions)
     }
 
+    // Loop through keys 
     for (let category in keys) {
         const labelAndInput = document.createElement('div')
         labelAndInput.classList.add('form-input')
@@ -350,6 +353,7 @@ function writeFormToDom(nextKey) {
         formContainer.appendChild(answers);
     }
 
+    //Handling form submission
     const submitBtn = document.createElement('button');
     submitBtn.classList.add('submit-btn');
     submitBtn.textContent = 'Submit';
