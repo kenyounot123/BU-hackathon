@@ -285,6 +285,32 @@ let questions = {
     }
 };
 
+
+var loader;
+
+function loadNow(opacity) {
+	if (opacity <= 0) {
+		displayContent();
+	} else {
+		loader.style.opacity = opacity;
+		window.setTimeout(function() {
+			loadNow(opacity - 0.05)
+		}
+		, 50);
+	}
+}
+
+function displayContent() {
+	const content = document.getElementById('content');
+	loader.style.display = 'none';
+	content.style.display = 'block';
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+	loader = document.getElementById('loader');
+	loadNow(1);
+});
+
 let selectedKey = 'categories';
 const startBtn = document.getElementById("start-btn");
 const container = document.querySelector(".homepage-container");

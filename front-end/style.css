@@ -120,3 +120,12 @@ body {
     font-size: 3rem;
     color: white;
 }
+
+.loader {
+	positions: absolute;
+	width: 100%;
+	height: 100vh;
+	z-index: 1;
+	overtflow: visible;
+	background: url(../assets/Loading_Icon.gif) no-repeat center center;
+}
