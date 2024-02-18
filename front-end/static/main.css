@@ -57,6 +57,12 @@ body {
     transform: translateY(-10px);
 }
 
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .form-input {
     display: flex;
     justify-content: space-between;
@@ -64,6 +70,7 @@ body {
     font-size: 1.5rem;
     color: white;
     flex-direction: row-reverse;
+    min-width: 250px;
 }
 
 .form-question {
@@ -86,12 +93,14 @@ body {
 
 .submit-btn {
     padding: 1em 2em;
-    text-align: center;
     font-size: 1rem;
     background-color: #EBF199;
     border: none;
     border-radius: 50px;
     margin-top: 1em;
+    width: 30%;
+    min-width: 200px;
+    align-self: center;
 }
 
 .submit-btn:hover {

@@ -294,7 +294,6 @@ startBtn.addEventListener("click", function () {
 });
 
 
-
 function writeFormToDom(nextKey) {
     //Create form container
     const formContainer = document.createElement('form');
@@ -309,9 +308,21 @@ function writeFormToDom(nextKey) {
     const answers = document.createElement('div');
     answers.classList.add('form-answers');
 
-    const keys = Object.keys(questions[nextKey]);
+    //Exit out of recursive function
+    let keys;
+    try {
+        keys = Object.keys(questions[nextKey]);
+    } catch (error) {
+        console.log("My error:", error)
+        return;
+    }
+
+    //Logic for when reaching end of nested object
     questions = questions[nextKey];
-    console.log(questions)
+    if (keys[0] === '0') {
+        keys = Object.values(questions)
+    }
+
     for (let category in keys) {
         const labelAndInput = document.createElement('div')
         labelAndInput.classList.add('form-input')
@@ -330,7 +341,6 @@ function writeFormToDom(nextKey) {
         //Add event listeners to radio buttons
         radioInput.addEventListener('click', () => {
             selectedKey = radioInput.value
-            console.log(selectedKey)
         })
 
 
@@ -360,6 +370,6 @@ function writeFormToDom(nextKey) {
 
 
     container.appendChild(formContainer);
-    container.appendChild(submitBtn);
+    formContainer.appendChild(submitBtn);
 }
 
