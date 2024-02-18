@@ -1,9 +1,9 @@
 
-fetch('../extraction/questions.json')      
+fetch('../extraction/questions.json')
     .then(response => response.json())
     .then(data => questions = data);
 
-fetch('../extraction/club_code.json')      
+fetch('../extraction/club_code.json')
     .then(response => response.json())
     .then(data => club_id = data);
 let selectedKey = 'categories';
@@ -100,10 +100,25 @@ function writeFormToDom(nextKey) {
 }
 
 function displayChosenClub(selectedClub) {
+
+    //Get selected link from json file
+    const selectedLink = club_id[selectedClub]
+    //Create title for chosen club
     const chosenClub = document.createElement('h1')
     chosenClub.classList.add('chosen-club')
     chosenClub.textContent = selectedClub
+    //Create Link container to append selected link
+    const linkContainer = document.createElement('div')
+    linkContainer.classList.add('club-link-container')
+    //Create link url
+    const clubLink = document.createElement('a')
+    clubLink.classList.add('club-link')
+    clubLink.setAttribute('href', `https://bengaged.binghamton.edu/feeds?type=club&type_id=${selectedLink}`)
+    clubLink.textContent = 'Click here to go to official Binghamton club website'
+    linkContainer.append(clubLink)
 
     container.append(chosenClub)
+    container.append(linkContainer)
+    container.classList.add('borderize')
 }
 
