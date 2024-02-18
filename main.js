@@ -79,7 +79,8 @@ function writeFormToDom(nextKey) {
     const submitBtn = document.createElement('button');
     submitBtn.classList.add('submit-btn');
     submitBtn.textContent = 'Submit';
-    submitBtn.addEventListener('click', () => {
+    submitBtn.addEventListener('click', (event) => {
+        event.preventDefault();
         const allRadioButtons = document.querySelectorAll('input')
         allRadioButtons.forEach(button => {
             if (button.checked) {
