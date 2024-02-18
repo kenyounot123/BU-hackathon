@@ -331,6 +331,7 @@ function writeFormToDom(nextKey) {
         labelAndInput.classList.add('form-input')
         //Create radio input
         const radioInput = document.createElement('input');
+        radioInput.classList.add('radio-btn')
         radioInput.setAttribute('id', keys[category]);
         radioInput.setAttribute('type', 'radio');
         radioInput.setAttribute('name', 'category');
